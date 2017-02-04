@@ -21,5 +21,9 @@ public class HomePageTest {
         PageFactory.initElements(Browser.driver, MensJeans.class)
         .verifyClothingSizePresent();
     }
+    @Test
+    public void secondTest(){
+
+    }
 
 }
