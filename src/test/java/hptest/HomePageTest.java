@@ -13,16 +13,14 @@ public class HomePageTest {
     @Test
     public  void  firstTest(){
 
-        Browser
-                .openBrowser()
-                .goToHomePage()
+        Browser.openBrowser()
                 .clickOnMensLink()
                 .clickFromClothing("Jeans");
         PageFactory.initElements(Browser.driver, MensJeans.class)
         .verifyClothingSizePresent();
     }
     @Test
-    public void secondTest(){
+     public void secondTest(){
 
     }
 

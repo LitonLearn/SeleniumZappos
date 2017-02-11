@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [hptest.HomePageTest]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="hptest.HomePageTest">
+        <methods>
+          <include name="firstTest"/>
+        </methods>
+      </class> <!-- hptest.HomePageTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [hptest.HomePageTest] -->
