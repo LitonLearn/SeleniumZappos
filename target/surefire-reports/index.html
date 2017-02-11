@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-hptest.HomePageTest">
-              <span class="suite-name border-passed">hptest.HomePageTest</span>
+              <span class="suite-name border-failed">hptest.HomePageTest</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -90,7 +90,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-hptest.HomePageTest" class="hide-methods failed suite-hptest.HomePageTest"> (hide)</a> <!-- hide-methods failed suite-hptest.HomePageTest -->
+                      <a href="#" panel-name="suite-hptest.HomePageTest" class="show-methods failed suite-hptest.HomePageTest"> (show)</a> <!-- show-methods failed suite-hptest.HomePageTest -->
+                    </span>
+                    <div class="method-list-content failed suite-hptest.HomePageTest">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-hptest.HomePageTest" title="hptest.HomePageTest" hash-for-method="firstTest">firstTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-hptest.HomePageTest -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,7 +115,7 @@
                     <div class="method-list-content passed suite-hptest.HomePageTest">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-hptest.HomePageTest" title="hptest.HomePageTest" hash-for-method="firstTest">firstTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-hptest.HomePageTest" title="hptest.HomePageTest" hash-for-method="secondTest">secondTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-hptest.HomePageTest -->
@@ -116,9 +130,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-hptest.HomePageTest" class="panel hptest.HomePageTest">
-          <div class="suite-hptest.HomePageTest-class-passed">
+          <div class="suite-hptest.HomePageTest-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">hptest.HomePageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -127,6 +141,46 @@
                   <a name="firstTest">
                   </a> <!-- firstTest -->
                   <span class="method-name">firstTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: .//*[@id=&apos;naviCenter&apos;]/h4[1]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;Shuvashish&apos;, ip: &apos;192.168.123.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, firefoxOptions={args=[], prefs={}}, appBuildId=20170125094131, moz:firefoxOptions={args=[], prefs={}}, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=11916, browserVersion=51.0.1, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt}]
+Session ID: f531edc0-26f6-4d34-ba8d-56e7faf8cb95
+*** Element info: {Using=xpath, value=.//*[@id=&apos;naviCenter&apos;]/h4[1]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:127)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:93)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:42)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy3.isDisplayed(Unknown Source)
+	at mens.MensJeans.verifyClothingSizePresent(MensJeans.java:13)
+	at hptest.HomePageTest.firstTest(HomePageTest.java:22)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-hptest.HomePageTest-class-failed -->
+          <div class="suite-hptest.HomePageTest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">hptest.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="secondTest">
+                  </a> <!-- secondTest -->
+                  <span class="method-name">secondTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -182,16 +236,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'firstTest')
 data.setCell(0, 2, 'hptest.HomePageTest')
-data.setCell(0, 3, 6755);
+data.setCell(0, 3, 28182);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'secondTest')
+data.setCell(1, 2, 'hptest.HomePageTest')
+data.setCell(1, 3, 0);
 window.suiteTableData['hptest.HomePageTest']= { tableData: data, tableDiv: 'times-div-hptest.HomePageTest'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 28 seconds</span>
               <div id="times-div-hptest.HomePageTest">
               </div> <!-- times-div-hptest.HomePageTest -->
             </div> <!-- times-div -->
@@ -219,8 +277,14 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">hptest.HomePageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">firstTest</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">secondTest</span>
+                <span class="method-start">28195 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

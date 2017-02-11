@@ -13,11 +13,13 @@ public class HomePage {
 
     @FindBy(how= How.XPATH, using = ".//*[@id='nav']/li[7]/a") private WebElement mensLink;
 
+
+
     WebDriver driver = Browser.driver;
 
     public MensFashion clickOnMensLink(){
 
-        mensLink.click();
+       mensLink.click();
         return PageFactory.initElements(driver,MensFashion.class);
 
     }
