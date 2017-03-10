@@ -22,11 +22,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="SeleniumZappos" />
+        <module name="StartSeleniumFramework" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.7">
-      <module name="SeleniumZappos" target="1.7" />
+      <module name="SeleniumZappos" target="1.5" />
+      <module name="StartSeleniumFramework" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
