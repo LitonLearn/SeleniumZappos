@@ -26,8 +26,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.7">
-      <module name="SeleniumZappos" target="1.5" />
-      <module name="StartSeleniumFramework" target="1.5" />
+      <module name="SeleniumZappos" target="1.7" />
+      <module name="StartSeleniumFramework" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>
