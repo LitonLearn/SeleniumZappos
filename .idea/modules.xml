@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SeleniumZappos.iml" filepath="$PROJECT_DIR$/SeleniumZappos.iml" />
-      <module fileurl="file://$PROJECT_DIR$/StartSeleniumFramework/StartSeleniumFramework.iml" filepath="$PROJECT_DIR$/StartSeleniumFramework/StartSeleniumFramework.iml" />
     </modules>
   </component>
 </project>

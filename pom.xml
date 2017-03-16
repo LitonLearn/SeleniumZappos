@@ -8,9 +8,7 @@
     <artifactId>SeleniumZappos</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>StartSeleniumFramework</module>
-    </modules>
+
 
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
