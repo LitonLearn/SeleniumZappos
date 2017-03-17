@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SeleniumZappos.iml" filepath="$PROJECT_DIR$/SeleniumZappos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/macy_module/macy_module.iml" filepath="$PROJECT_DIR$/macy_module/macy_module.iml" />
     </modules>
   </component>
 </project>
