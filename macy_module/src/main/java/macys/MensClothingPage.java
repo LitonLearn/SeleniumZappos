@@ -11,5 +11,7 @@ public class MensClothingPage {
     public void verifyTitle(){
        String titlte= MacyBrowser.driver.getTitle();
         Assert.assertTrue(titlte.contains("Mens Clothing"));
+
+        //this is a test
     }
 }
