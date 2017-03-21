@@ -8,6 +8,6 @@ public class MacyTest {
 
     @Test
     public void sartTest(){
-        MacyBrowser.openBrowser().clickMensLink().verifyTitle();
+        MacyBrowser.openBrowser("Chrome").clickMensLink().verifyTitle();
     }
 }
