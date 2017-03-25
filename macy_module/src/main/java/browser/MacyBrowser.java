@@ -24,7 +24,7 @@ public class MacyBrowser {
     }
 
     private static void selectBrowser(String browser){
-        if (browser.equalsIgnoreCase("firefox")){
+        if (browser.equalsIgnoreCase("Firefox")){
             System.setProperty("webdriver.gecko.driver","src\\resource\\geckodriver.exe");
             driver = new FirefoxDriver();
         } else if(browser.equalsIgnoreCase("chrome")){
